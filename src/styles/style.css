@@ -1,0 +1,174 @@
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #fafafa;
+}
+
+/* Contenedor principal que simula una página tipo documento */
+.main-wrapper {
+    max-width: 1024px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-left: 1px solid #e9ecef;
+    border-right: 1px solid #e9ecef;
+    min-height: 100vh;
+}
+.bg-about-me {
+    background-image: url('../images/about-me/about-me-bg.svg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+/* Hero Image */
+.hero-banner {
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+    background-color: #e9ecef;
+}
+
+/* Avatar */
+.avatar-wrapper {
+    margin-top: -64px;
+    position: relative;
+    display: inline-block;
+}
+
+.avatar-img {
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+    border: 4px solid #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.status-dot {
+    width: 16px;
+    height: 16px;
+    background-color: #10b981;
+    border: 2px solid #ffffff;
+    position: absolute;
+    bottom: 8px;
+    right: 8px;
+}
+
+/* Tipografía y utilidades personalizadas */
+.section-title {
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #6c757d;
+}
+
+.text-purple {
+    color: #7C3AED;
+}
+
+.bg-highlight {
+    background-color: #FEF08A;
+    padding: 0 4px;
+    border-radius: 4px;
+}
+
+/* Botones de iconos sociales */
+.social-btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #dee2e6;
+    color: #495057;
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.social-btn:hover {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+/* Etiquetas de Servicios */
+.service-tag {
+    font-size: 0.875rem;
+    color: #495057;
+    border: 1px solid #dee2e6;
+    padding: 0.35rem 1rem;
+    border-radius: 50px;
+    display: inline-block;
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* Tarjetas de Trabajos */
+.work-card-img-wrapper {
+    background-color: #f3f4f6;
+    height: 280px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+.work-card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.work-card:hover .work-card-img {
+    transform: scale(1.05);
+}
+
+/* Timeline en Educación */
+.timeline-container {
+    position: relative;
+}
+
+.timeline-line {
+    position: absolute;
+    left: 173px;
+    top: 8px;
+    bottom: 24px;
+    width: 2px;
+    background-color: #dee2e6;
+}
+.timeline-dot {
+    width: 16px;
+    height: 16px;
+    background-color: #212529;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px #dee2e6;
+    margin-top: 4px;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 767px) {
+
+    .timeline-line,
+    .timeline-dot {
+        display: none !important;
+    }
+
+    .timeline-date {
+        margin-bottom: 0.25rem;
+        font-weight: 500;
+    }
+}
+
+/* Pequeños ajustes de espaciado general */
+.section-padding {
+    padding: 4rem 2rem;
+}
+
+@media (min-width: 768px) {
+    .section-padding {
+        padding: 4rem 3rem;
+    }
+}
