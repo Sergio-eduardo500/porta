@@ -162,6 +162,41 @@ body {
     transform: scale(1.05);
 }
 
+/* section ver mas */
+.proyecto-extra {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+    max-height: 0;
+    overflow: hidden;
+    pointer-events: none;
+    transition: all 0.5s ease;
+}
+
+.proyecto-extra.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    max-height: 600px;
+    pointer-events: auto;
+}
+.btn-ver-mas {
+    background: #f1f3f5;
+    color: #343a40;
+    border: 1px solid #dee2e6;
+    border-radius: 50px;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-ver-mas:hover {
+    background: #e9ecef;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+
+
+
+
 /* Timeline en Educación */
 .timeline-container {
     position: relative;
