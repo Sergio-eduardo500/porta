@@ -1,0 +1,58 @@
+/* src/styles/detalles.css */
+
+/* Caja de la imagen: ya no se desborda */
+.detalle-img-box {
+    width: 100%;
+    max-height: 480px;
+    overflow: hidden;
+    background-color: #f3f4f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    border: 1px solid #e9ecef;
+}
+
+.detalle-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+    object-position: top center;
+}
+
+/* Texto de descripción para que coincida con tu sección de experiencia */
+.detalle-texto {
+    font-size: 0.875rem; /* Igual al 'small' de Bootstrap */
+    line-height: 1.7;
+    text-align: left;
+    color: #6c757d; /* Gris de .text-muted */
+}
+
+
+/* Iconos del carrusel */
+.custom-carousel-icon {
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+    padding: 1.2rem;
+    background-size: 50%;
+}
+/* Asegurarnos de que las flechas siempre estén hasta adelante */
+.carousel-control-prev,
+.carousel-control-next {
+    z-index: 5; /* Un valor alto para que floten sobre la imagen */
+}
+
+.carousel-indicators {
+    z-index: 5;
+}
+/* Ajustar la velocidad para que sea más rápida (Snappy) */
+.carousel-item {
+    /* Bajamos de 0.8s a 0.5s */
+    transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1) !important;
+}
+
+/* Si usas el Fade, también bájale aquí */
+.carousel-fade .carousel-item {
+    transition: opacity 0.5s ease-in-out !important;
+}

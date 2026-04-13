@@ -1,0 +1,85 @@
+[
+    {
+        "id": "cidam",
+        "titulo": "Plataforma CIDAM",
+        "imagenes": [
+            "src/images/occidam_login.png"
+        ],
+        "tecnologias": "Laravel, PHP, GitHub, MySQL, Nodejs, Bootstrap, HTML, CSS, JavaScript, JQuery",
+        "descripcion": "Plataforma diseñada para la gestión, emisión de certificados de mezcal y administración de datos de clientes, tanto internos como externos de la empresa. Esta plataforma ofrece una experiencia eficiente, segura y personalizada, optimizando procesos y facilitando el acceso a la información relevante para cada usuario.",
+        "link": "https://occidam.com/login"
+    },
+    {
+        "id": "qualitechai",
+        "titulo": "Qualitech AI",
+        "imagenes": [
+            "src/images/qualitechai/sgc.qualitechai.com_login.png"
+        ],
+        "tecnologias": "Laravel, PHP, MySQL, JavaScript",
+        "descripcion": "Desarrollo del Sistema de Gestión de Calidad (ERP-17025) para la automatización, trazabilidad y control de procesos en laboratorios.",
+        "link": "https://sgc.qualitechai.com/login"
+    },
+    {
+        "id": "mundo-autopartes",
+        "titulo": "Mundo Autopartes",
+        "imagenes": [
+            "src/images/Autopartes/login_mundoA.png"
+        ],
+        "tecnologias": "Node.js, Express, MySQL, Bootstrap",
+        "descripcion": "Proyecto de gestión para refaccionaria automotriz con control de inventario y ventas.",
+        "link": "#"
+    },
+    {
+        "id": "provalab",
+        "titulo": "Provalab",
+        "imagenes": [
+            "src/images/provalab/provalab.occidam.com_login.png"
+        ],
+        "tecnologias": "PHP, JavaScript (Leaflet), APIs REST, Bootstrap 5, reCAPTCHA",
+        "descripcion": "Sitio web para Provalab, empresa dedicada a la certificación de productos y servicios relacionados con el mezcal.",
+        "link": "https://provalab.occidam.com/login"
+    },
+    {
+        "id": "check-intime",
+        "titulo": "Check Intime",
+        "imagenes": [
+            "src/images/check/login_S.png",
+            "src/images/check/perfil-datos-usuario-check.png",
+            "src/images/check/registro-entrada-check.png",
+            "src/images/check/actividad-check.png"
+        ],
+        "tecnologias": "C#, Windows Forms, .NET Framework, SQL Server, Visual Studio",
+        "descripcion": "Herramienta integral de control de asistencia diseñada para entornos comerciales. El sistema permite a los empleados gestionar sus registros de entrada y salida, así como consultar historiales detallados, ausencias y desglose de descuentos. Cuenta con una arquitectura de roles donde el administrador supervisa la actividad global y el usuario final dispone de una interfaz de solo lectura para su información personal, garantizando la integridad de los datos.",
+        "link": "#"
+    },
+    {
+        "id": "sistema-citas-dif",
+        "titulo": "Sistema de Citas - DIF Huetamo",
+        "imagenes": [
+            "src/images/dif/login-dif.png"
+        ],
+        "tecnologias": "PHP, MySQL, Bootstrap",
+        "descripcion": "Módulo para el registro y visualización de citas de los diferentes servicios del Sistema DIF Huetamo.",
+        "link": "#"
+    },
+    {
+        "id": "sitio-bordados",
+        "titulo": "Sitio Web Bordados Occidam",
+        "imagenes": [
+            "src/images/bordados/bordados.occidam.com_index.html.png"
+        ],
+        "tecnologias": "PHP, JavaScript, Bootstrap",
+        "descripcion": "Sitio web para Bordados Occidam, empresa especializada en bordados personalizados para diversos productos.",
+        "link": "#"
+    },
+    {
+        "id": "sitio-gan-campo",
+        "titulo": "Sitio Web Gan Campo",
+        "imagenes": [
+            "src/images/gan_campo/gancampo.com.png"
+        ],
+        "tecnologias": "PHP, JavaScript, Bootstrap",
+        "descripcion": "Sitio web para Gan Campo, empresa dedicada a la comercialización de ganado y productos relacionados con la ganadería.",
+        "link": "#"
+    }
+]
