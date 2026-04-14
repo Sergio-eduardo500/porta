@@ -33,7 +33,11 @@
         "id": "provalab",
         "titulo": "Provalab",
         "imagenes": [
-            "src/images/provalab/provalab.occidam.com_login.png"
+            "src/images/provalab/provalab.occidam.com_login.png",
+            "src/images/provalab/provalab.occidam.com.png",
+            "src/images/provalab/provalab.occidam.com_servicios.png",
+            "src/images/provalab/provalab.occidam.com_calidad.png",
+            "src/images/provalab/provalab.occidam.com_contact.png"
         ],
         "tecnologias": "PHP, JavaScript (Leaflet), APIs REST, Bootstrap 5, reCAPTCHA",
         "descripcion": "Sitio web para Provalab, empresa dedicada a la certificación de productos y servicios relacionados con el mezcal.",
