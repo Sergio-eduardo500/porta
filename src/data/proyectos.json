@@ -15,7 +15,7 @@
         "imagenes": [
             "src/images/qualitechai/sgc.qualitechai.com_login.png"
         ],
-        "tecnologias": "Laravel, PHP, MySQL, JavaScript",
+        "tecnologias": "Laravel, PHP, GitHub, MySQL, Nodejs, Bootstrap4, HTML, CSS, JavaScript, JQuery",
         "descripcion": "Desarrollo del Sistema de Gestión de Calidad (ERP-17025) para la automatización, trazabilidad y control de procesos en laboratorios.",
         "link": "https://sgc.qualitechai.com/login"
     },
@@ -23,15 +23,19 @@
         "id": "mundo-autopartes",
         "titulo": "Mundo Autopartes",
         "imagenes": [
-            "src/images/Autopartes/login_mundoA.png"
+            "src/images/Autopartes/login_mundoA.png",
+            "src/images/Autopartes/perfil_autopates.png",
+            "src/images/Autopartes/Principal_autopartes.png",
+            "src/images/Autopartes/alternadores_autopartes.png",
+            "src/images/Autopartes/provedores_mundo.png"
         ],
-        "tecnologias": "Node.js, Express, MySQL, Bootstrap",
-        "descripcion": "Proyecto de gestión para refaccionaria automotriz con control de inventario y ventas.",
-        "link": "#"
+        "tecnologias": "Node.js, Express (EJS), MySQL, JavaScript, Bootstrap, HTML5, CSS",
+        "descripcion": "Mundo Autopartes es una página web para la venta de autopartes eléctricas. La plataforma permite a los usuarios registrarse, iniciar sesión y comprar partes eléctricas. Los administradores pueden gestionar productos y proveedores, facilitando la administración y actualización de la información de manera sencilla y eficiente.",
+        "link": ""
     },
     {
         "id": "provalab",
-        "titulo": "Provalab",
+        "titulo": "Sitio Web Provalab",
         "imagenes": [
             "src/images/provalab/provalab.occidam.com_login.png",
             "src/images/provalab/provalab.occidam.com.png",
@@ -39,9 +43,9 @@
             "src/images/provalab/provalab.occidam.com_calidad.png",
             "src/images/provalab/provalab.occidam.com_contact.png"
         ],
-        "tecnologias": "PHP, JavaScript (Leaflet), APIs REST, Bootstrap 5, reCAPTCHA",
-        "descripcion": "Sitio web para Provalab, empresa dedicada a la certificación de productos y servicios relacionados con el mezcal.",
-        "link": "https://provalab.occidam.com/login"
+        "tecnologias": "PHP, JavaScript (Leaflet), APIs REST, Bootstrap 5, reCAPTCHA, Seguridad Web (CSP/HSTS)",
+        "descripcion": "Sitio web corporativo e informativo para Provalab, entidad especializada en la certificación de productos y servicios de la industria del mezcal. Diseñado con una interfaz profesional y estructurada para proyectar confianza, detallar sus procesos de evaluación y facilitar el contacto directo con productores y empresas del sector.",
+        "link": "https://provalab.occidam.com"
     },
     {
         "id": "check-intime",
@@ -62,19 +66,19 @@
         "imagenes": [
             "src/images/dif/login-dif.png"
         ],
-        "tecnologias": "PHP, MySQL, Bootstrap",
+        "tecnologias": "HTML5, Bootstrap, CSS3, SQL Server",
         "descripcion": "Módulo para el registro y visualización de citas de los diferentes servicios del Sistema DIF Huetamo.",
         "link": "#"
     },
-    {
+{
         "id": "sitio-bordados",
-        "titulo": "Sitio Web Bordados Occidam",
+        "titulo": "Sitio Web Bordados",
         "imagenes": [
             "src/images/bordados/bordados.occidam.com_index.html.png"
         ],
         "tecnologias": "PHP, JavaScript, Bootstrap",
-        "descripcion": "Sitio web para Bordados Occidam, empresa especializada en bordados personalizados para diversos productos.",
-        "link": "#"
+        "descripcion": "Sitio web corporativo para Bordados Occidam. Diseñado a medida para exhibir su catálogo de bordados personalizados y artículos promocionales, optimizando la presentación visual de sus trabajos y facilitando la captación de clientes a través de una interfaz rápida y responsiva.",
+        "link": "https://bordados.occidam.com/"
     },
     {
         "id": "sitio-gan-campo",
@@ -82,8 +86,8 @@
         "imagenes": [
             "src/images/gan_campo/gancampo.com.png"
         ],
-        "tecnologias": "PHP, JavaScript, Bootstrap",
-        "descripcion": "Sitio web para Gan Campo, empresa dedicada a la comercialización de ganado y productos relacionados con la ganadería.",
-        "link": "#"
+        "tecnologias": "WordPress",
+        "descripcion": "Sitio web e-commerce para Gan Campo, empresa del sector agropecuario. Desarrollada 100% en WordPress con tienda en línea integrada, permitiendo la venta directa de productos. Su enfoque autoadministrable le brinda al cliente total autonomía para gestionar inventario, procesar pedidos y actualizar contenidos de forma intuitiva y ágil.",
+        "link": "https://gancampo.com/"
     }
 ]
