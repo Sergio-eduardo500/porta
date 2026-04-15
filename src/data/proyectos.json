@@ -64,19 +64,22 @@
         "id": "sistema-citas-dif",
         "titulo": "Sistema de Citas - DIF Huetamo",
         "imagenes": [
-            "src/images/dif/login-dif.png"
+            "src/images/dif/login-dif.png",
+            "src/images/dif/registro-dif.png",
+            "src/images/dif/admin-citas-dif.png",
+            "src/images/dif/citas-dif.png"
         ],
         "tecnologias": "HTML5, Bootstrap, CSS3, SQL Server",
         "descripcion": "Módulo para el registro y visualización de citas de los diferentes servicios del Sistema DIF Huetamo.",
         "link": "#"
     },
-{
+    {
         "id": "sitio-bordados",
         "titulo": "Sitio Web Bordados",
         "imagenes": [
             "src/images/bordados/bordados.occidam.com_index.html.png"
         ],
-        "tecnologias": "PHP, JavaScript, Bootstrap",
+        "tecnologias": "HTML5, CSS3, Bootstrap 5, JavaScript, reCAPTCHA",
         "descripcion": "Sitio web corporativo para Bordados Occidam. Diseñado a medida para exhibir su catálogo de bordados personalizados y artículos promocionales, optimizando la presentación visual de sus trabajos y facilitando la captación de clientes a través de una interfaz rápida y responsiva.",
         "link": "https://bordados.occidam.com/"
     },

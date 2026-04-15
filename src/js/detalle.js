@@ -71,10 +71,29 @@ document.addEventListener("DOMContentLoaded", () => {
                 document.getElementById("proyecto-descripcion").innerText = proyecto.descripcion;
 
                 // Configurar Botón
-                if (proyecto.link && proyecto.link !== "#") {
-                    const linkElement = document.getElementById("proyecto-link");
+                const linkElement = document.getElementById("proyecto-link");
+
+                if (proyecto.link && proyecto.link !== "" && proyecto.link !== "#") {
+                    // CASO 1: Es un proyecto público con enlace válido
                     linkElement.href = proyecto.link;
                     linkElement.style.display = "inline-flex";
+                } else {
+                    // CASO 2: Es un proyecto que no está en línea (el enlace es "#" o está vacío)
+                    linkElement.style.display = "inline-flex"; // Lo mostramos
+                    linkElement.removeAttribute("href"); // Quitamos el hipervínculo para que no haga nada al hacer clic
+                    
+                    linkElement.classList.remove("btn-dark");
+                    linkElement.classList.add("btn-secondary");
+                    linkElement.style.cursor = "not-allowed"; 
+                    linkElement.style.opacity = "0.7"; 
+                    
+                    linkElement.innerHTML = `
+                        Proyecto no dispobile
+                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+                            <path d="M11.354 4.646a.5.5 0 0 0-.708 0l-6 6a.5.5 0 0 0 .708.708l6-6a.5.5 0 0 0 0-.708z"/>
+                        </svg>
+                    `;
                 }
 
             } else {
