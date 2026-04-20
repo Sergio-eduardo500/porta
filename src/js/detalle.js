@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         // Tiene enlace web
                         linkElement.href = proyecto.link.trim();
                         linkElement.className = "btn btn-dark rounded-pill btn-sm d-inline-flex align-items-center gap-2 px-4 py-2 text-decoration-none fw-medium";
-                        linkElement.innerHTML = `Visitar proyecto <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>`;
+                        linkElement.innerHTML = `Ver <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>`;
                     } else {
                         // Enlace web Offline
                         linkElement.removeAttribute("href");
