@@ -58,7 +58,8 @@
         ],
         "tecnologias": "C#, Windows Forms, .NET Framework, SQL Server, Visual Studio",
         "descripcion": "Herramienta integral de control de asistencia diseñada para entornos comerciales. El sistema permite a los empleados gestionar sus registros de entrada y salida, así como consultar historiales detallados, ausencias y desglose de descuentos. Cuenta con una arquitectura de roles donde el administrador supervisa la actividad global y el usuario final dispone de una interfaz de solo lectura para su información personal, garantizando la integridad de los datos.",
-        "link": "#"
+        "link": "",
+        "github":"https://github.com/Sergio-eduardo500/check-intime"
     },
     {
         "id": "sistema-citas-dif",
@@ -71,7 +72,7 @@
         ],
         "tecnologias": "HTML5, Bootstrap, CSS3, SQL Server",
         "descripcion": "Módulo para el registro y visualización de citas de los diferentes servicios del Sistema DIF Huetamo.",
-        "link": "#"
+        "link": ""
     },
     {
         "id": "sitio-bordados",

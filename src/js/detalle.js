@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
                 // Verificar si existe el arreglo 'imagenes' y no está vacío
                 if (proyecto.imagenes && proyecto.imagenes.length > 0) {
-                    
+
                     // Recorrer el arreglo de imágenes
                     proyecto.imagenes.forEach((rutaImagen, index) => {
                         const claseActiva = index === 0 ? "active" : ""; // La primera imagen debe ser activa
@@ -70,31 +70,51 @@ document.addEventListener("DOMContentLoaded", () => {
                 // Inyectar Descripción
                 document.getElementById("proyecto-descripcion").innerText = proyecto.descripcion;
 
-                // Configurar Botón
+                // --- CONFIGURACIÓN DE BOTONES ---
                 const linkElement = document.getElementById("proyecto-link");
+                const btnGithub = document.getElementById("proyecto-github");
 
-                if (proyecto.link && proyecto.link !== "" && proyecto.link !== "#") {
-                    // CASO 1: Es un proyecto público con enlace válido
-                    linkElement.href = proyecto.link;
-                    linkElement.style.display = "inline-flex";
-                } else {
-                    // CASO 2: Es un proyecto que no está en línea (el enlace es "#" o está vacío)
-                    linkElement.style.display = "inline-flex"; // Lo mostramos
-                    linkElement.removeAttribute("href"); // Quitamos el hipervínculo para que no haga nada al hacer clic
-                    
-                    linkElement.classList.remove("btn-dark");
-                    linkElement.classList.add("btn-secondary");
-                    linkElement.style.cursor = "not-allowed"; 
-                    linkElement.style.opacity = "0.7"; 
-                    
-                    linkElement.innerHTML = `
-                        Proyecto no dispobile
-                        <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
-                            <path d="M11.354 4.646a.5.5 0 0 0-.708 0l-6 6a.5.5 0 0 0 .708.708l6-6a.5.5 0 0 0 0-.708z"/>
-                        </svg>
-                    `;
+                // 1. APAGAR AMBOS BOTONES (LA SOLUCIÓN AL BUG)
+                // Usamos "d-none" de Bootstrap para ocultarlos y eliminamos cualquier rastro de "d-inline-flex"
+                linkElement.className = "d-none";
+                btnGithub.className = "d-none";
+                // Limpiamos los estilos en línea por si acaso
+                linkElement.removeAttribute("style");
+                btnGithub.removeAttribute("style");
+
+                // 2. Configurar Botón Principal (Sitio Web)
+                if (proyecto.link) {
+                    if (proyecto.link.trim() !== "#") {
+                        // Tiene enlace web
+                        linkElement.href = proyecto.link.trim();
+                        linkElement.className = "btn btn-dark rounded-pill btn-sm d-inline-flex align-items-center gap-2 px-4 py-2 text-decoration-none fw-medium";
+                        linkElement.innerHTML = `Visitar proyecto <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>`;
+                    } else {
+                        // Enlace web Offline
+                        linkElement.removeAttribute("href");
+                        linkElement.className = "btn btn-secondary rounded-pill btn-sm d-inline-flex align-items-center gap-2 px-4 py-2 text-decoration-none fw-medium";
+                        linkElement.style.cursor = "not-allowed";
+                        linkElement.innerHTML = `Proyecto Offline <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M18.364 5.636a9 9 0 010 12.728m0 0l-2.829-2.829m2.829 2.829L21 21M15.536 8.464a5 5 0 010 7.072m0 0l-2.829-2.829m-4.243 2.829a4.978 4.978 0 01-1.414-2.83m-1.414 5.658a9 9 0 01-2.167-9.238m7.824 2.167a1 1 0 111.414 1.414m-1.414-1.414L3 3m8.293 8.293l1.414 1.414"></path></svg>`;
+                    }
                 }
+
+                // 3. Configurar Botón GitHub
+                if (proyecto.hasOwnProperty("github") && proyecto.github !== null && proyecto.github.trim() !== "") {
+                    if (proyecto.github.trim() === "#") {
+                        // GitHub Privado
+                        btnGithub.removeAttribute("href");
+                        btnGithub.className = "btn btn-secondary rounded-pill btn-sm d-inline-flex align-items-center gap-2 px-4 py-2 text-decoration-none fw-medium";
+                        btnGithub.style.cursor = "not-allowed";
+                        btnGithub.innerHTML = `Código Privado <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>`;
+                    } else {
+                        // GitHub Público
+                        btnGithub.href = proyecto.github.trim();
+                        btnGithub.className = "btn btn-outline-dark rounded-pill btn-sm d-inline-flex align-items-center gap-2 px-4 py-2 text-decoration-none fw-medium";
+                        btnGithub.style.cursor = "pointer";
+                        btnGithub.innerHTML = `Ver en GitHub <svg width="16" height="16" fill="currentColor" viewBox="0 0 16 16"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>`;
+                    }
+                }
+
 
             } else {
                 document.getElementById("proyecto-titulo").innerText = "Proyecto no encontrado";
