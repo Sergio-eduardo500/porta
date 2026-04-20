@@ -67,12 +67,16 @@
         "imagenes": [
             "src/images/dif/login-dif.png",
             "src/images/dif/registro-dif.png",
+            "src/images/dif/cita_fisio.png",
             "src/images/dif/admin-citas-dif.png",
-            "src/images/dif/citas-dif.png"
+            "src/images/dif/citas-dif.png",
+            "src/images/dif/edit_modal.png"
+
         ],
         "tecnologias": "HTML5, Bootstrap, CSS3, SQL Server",
         "descripcion": "Módulo para el registro y visualización de citas de los diferentes servicios del Sistema DIF Huetamo.",
-        "link": ""
+        "link": "",
+        "github":"https://github.com/Sergio-eduardo500/AppDIF-Huetamo.git"
     },
     {
         "id": "sitio-bordados",
