@@ -97,5 +97,19 @@
         "tecnologias": "WordPress",
         "descripcion": "Sitio web e-commerce para Gan Campo, empresa del sector agropecuario. Desarrollada 100% en WordPress con tienda en línea integrada, permitiendo la venta directa de productos. Su enfoque autoadministrable le brinda al cliente total autonomía para gestionar inventario, procesar pedidos y actualizar contenidos de forma intuitiva y ágil.",
         "link": "https://gancampo.com/"
+    },
+    {
+        "id": "sitio-qualitechai",
+        "titulo": "Sitio Web Qualitech AI",
+        "imagenes": [
+            "src/images/qualitechai/qualitechai.com_index.png",
+            "src/images/qualitechai/qualitechai.com_sitios_webs.png",
+            "src/images/qualitechai/precios.png",
+            "src/images/qualitechai/qualitechai.com_contacto.png"
+            
+        ],
+        "tecnologias": "Tailwind CSS, PHP, JavaScript, HTML5",
+        "descripcion": "Desarrollo de un sitio web corporativo enfocado en la presentación de soluciones tecnológicas y plataformas ERP personalizadas. La página está orientada a la digitalización y automatización de procesos empresariales, especialmente en entornos regulados como laboratorios, integrando diseño moderno, experiencia de usuario optimizada y estructura responsiva.",
+        "link": "https://qualitechai.com/"
     }
 ]
